@@ -1,3 +1,4 @@
+// import React from 'react';
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import {Provider} from 'react-redux';
@@ -29,9 +30,10 @@ if (localStorage.jwtToken) {
   }
 }
 
-function App() {
+ function App() { 
   return (
-    <Provider store={store} >
+    <Provider store={store} >   
+    
       <Router>
         <div className="App">
           <Navbar/>
@@ -44,8 +46,10 @@ function App() {
         </div>
       </Router>
     </Provider>
-    
+       
   );
-}
+ }
 
-export default App;
+
+ export default App;
+

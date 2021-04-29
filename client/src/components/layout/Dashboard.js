@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
+import MapViewer from "./Mapview";
 
 class Dashboard extends Component {
   onLogout = e => {
@@ -10,27 +11,18 @@ class Dashboard extends Component {
   };
 
 render() {
-    const { user } = this.props.auth;
+    // const { user } = this.props.auth;
     return (
-      <div  className="container text-center mt-15">
-        <div className="row">
-          <div className="col-sm-12">
-            <h4>
-              Hey there, <b className="name-lable">{user.name.split(" ")[0]}</b>
-              <p className="mt-4">
-                You are logged into a full-stack{" "}
-                <span style={{ fontFamily: "monospace" }}>MERN</span> app 👏
-              </p>
-            </h4>
+      <div  className="container text-right mt-0">                
             <button
               onClick={this.onLogout}
               className="btn btn-large btn-light hoverable font-weight-bold"
             >
               Logout
             </button>
-          </div>
-        </div>
+            <div  className="container text-left mt-0">  <MapViewer /></div>
       </div>
+      
     );
   }
 }

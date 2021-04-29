@@ -16,6 +16,6 @@ import { SET_CURRENT_USER } from "../actions/types";
           user: action.payload
         };
       default:
-        return state;
+        return state; 
     }
   }

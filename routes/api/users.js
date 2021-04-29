@@ -17,7 +17,7 @@ const User = require("../../models/UserSchema");
 
 router.post("/register", (req, res) => {
     
-    //Form validation
+    //Form validation 
     const {errors, isValid} = validateRegisterInput(req.body);
     
     if(!isValid){

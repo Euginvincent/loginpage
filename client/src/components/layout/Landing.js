@@ -8,10 +8,7 @@ class Landing extends Component {
         <div className="row">
           <div className="col-sm-12 ">
             <h1>
-              Login/auth app with the{" "}
-              <span style={{ fontFamily: "monospace" }}>MERN</span> stack.
-            </h1>
-            <p>[Full-stack app with user authentication via passport and JWTs]</p>
+            <p>Welcome to the Register Page</p></h1>
             </div>
             </div>
             <div className="row mt-4">
